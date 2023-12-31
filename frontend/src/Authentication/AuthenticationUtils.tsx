@@ -1,14 +1,10 @@
 import { NavigateFunction, useNavigate } from 'react-router-dom';
 import React from 'react';
+import {ServerStatusResponse} from '../utils';
 
 export interface AuthData {
     url: string;
     credentials: {username: string, password: string};
-}
-
-export interface AuthResponse {
-    status: string;
-    message: string;
 }
 
 export interface LoginProps {
@@ -19,7 +15,7 @@ export interface LoginProps {
     navigate: NavigateFunction;
 }
 
-export async function sendCredentials(authData:AuthData): Promise<AuthResponse> {
+export async function sendCredentials(authData:AuthData): Promise<ServerStatusResponse> {
     try {
         const response = await fetch(authData.url, {
             method: "POST",
@@ -37,8 +33,8 @@ export async function sendCredentials(authData:AuthData): Promise<AuthResponse> 
 
 //Todo handle error codes differently
 export async function handleCredentialSubmit(authData:AuthData, navigate: NavigateFunction, 
-    sendCredentials: (authData: AuthData) => Promise<AuthResponse>) {
-    let result:AuthResponse = await sendCredentials(authData);
+    sendCredentials: (authData: AuthData) => Promise<ServerStatusResponse>) {
+    let result:ServerStatusResponse = await sendCredentials(authData);
     if (result.status === "approved") {
         navigate("/");
     }

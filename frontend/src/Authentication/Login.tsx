@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import {handleCredentialSubmit, sendCredentials, LoginProps} from './utils';
+import {handleCredentialSubmit, sendCredentials, LoginProps} from './AuthenticationUtils';
 /**
   * Displays and submits login form
   */

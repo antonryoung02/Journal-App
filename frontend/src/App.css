@@ -2,18 +2,6 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  height:100px;
-  display: flex;
-
-  gap:20px;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 body {
   background-color: rgb(113, 115, 125);
 }

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import {handleCredentialSubmit, sendCredentials, LoginProps} from './utils';
+import {handleCredentialSubmit, sendCredentials, LoginProps} from './AuthenticationUtils';
 /**
-  * Displays and submits sign up form
+  * Displays and submits log in form
   */
 const Signup:React.FC<LoginProps> = ({ username, setUsername, password, setPassword, navigate }) => {
     const [confirmPassword, setConfirmPassword] = useState('');

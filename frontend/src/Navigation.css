@@ -1,0 +1,44 @@
+.App-header {
+    background-color: #282c34;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+}
+
+#primary-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#left-nav, #right-nav {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 2em;
+}
+
+.nav-list-element a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    padding-bottom: 10px; /* Adjusts space between text and underline */
+}
+
+.nav-list-element a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: white; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-list-element a:hover::after {
+    width: 100%;
+}
