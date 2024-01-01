@@ -8,7 +8,9 @@ function Navigation() {
             <nav id="primary-navigation">
                 <ul id="left-nav">
                     <li className="nav-list-element"><Link to="/">Home</Link></li>
-                    <li className="nav-list-element"><Link to="/journalprompt">My Prompts </Link></li>
+                    <li className="nav-list-element"><Link to="/prompts">My Prompts </Link></li>
+                    <li className="nav-list-element"><Link to="/trackers">My Trackers</Link></li>
+                    <li className="nav-list-element"><Link to="/stats">My Stats</Link></li>
                 </ul>
                 <ul id="right-nav">
                     <li className="nav-list-element"><Link to="/auth">Logout </Link></li>

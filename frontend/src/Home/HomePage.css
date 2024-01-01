@@ -1,0 +1,20 @@
+#display-day {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 60%;
+    height: 600px;
+    background-color: rgb(221, 221, 221);
+    margin: 0 auto;
+}
+#date-controller {
+    display:flex;
+}
+#date-controller-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+#display-day-container {
+}

@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { NavigateFunction, useNavigate } from 'react-router-dom';
-import './Auth.css';
+import './AuthPage.css';
 import Login from './Login';
 import Signup from './Signup';
 
 /**
   *  Displays user login screen
   */
-function Auth() {
+function AuthPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLogin, setIsLogin] = useState(true);
@@ -28,4 +28,4 @@ function Auth() {
     );
 };
 
-export default Auth;
+export default AuthPage;
